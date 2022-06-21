@@ -5,5 +5,5 @@ api_url="https://discord.com/api/webhooks/${INPUT_WEBHOOK_ID}/${INPUT_WEBHOOK_TO
 echo $api_url
 curl \
     -H "Content-Type: application/json" \
-    -d '{"username": "Github Bot", "content": "$INPUT_MESSAGE"'  \
+    -d '{"username": "Github Bot", "content": "$INPUT_MESSAGE"}'  \
     $api_url
