@@ -1,0 +1,1 @@
+This is a github action to send a message to a discord server/channel using webhook for channel.

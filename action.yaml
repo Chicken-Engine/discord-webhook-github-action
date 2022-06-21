@@ -1,0 +1,18 @@
+# action.yaml
+name: 'Discord Webhook Send Message'
+description: 'Send message to webhook of discord channel.'
+inputs:
+  webhook_id: ${{ secrets.WEBHOOK_ID }}
+    description: 'Discord Channel webhook id'
+    required: true
+  webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+    description: 'Discord Channel webhook token'
+    required: true
+  message: 'New github release download here https://github.com/aar0nsky/tarkov-map-viewer/releases/latest'
+    description: 'custom message to be sent'
+    required: false
+    default: 'New github release download here https://github.com/aar0nsky/tarkov-map-viewer/releases/latest'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
