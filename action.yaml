@@ -2,10 +2,6 @@
 name: 'Discord Webhook Send Message'
 description: 'Send message to webhook of discord channel.'
 inputs:
-  webhook_name:
-    description: 'custom name for webhook'
-    required: false
-    default: 'Chicken'
   webhook_id:
     description: 'Discord Channel webhook id'
     required: true
