@@ -9,16 +9,17 @@ WEBHOOK_TOKEN = abcd
 ```
 
 ## Usage
-To use this in your action you need to specify this in your projects workflow.yml under the jobs section(you can name it whatever you want)
+To use this in your action you need to specify this in your projects workflow.yml under the jobs section (you can name it whatever you want)
 ```yaml
 jobs:
   discord:
     runs-on: ubuntu-latest
     steps:
       - name: Send message to discord channel
-        uses: aar0nsky/discord-webhook-github-action@main
+        uses: Chicken-Engine/discord-webhook-github-action@main
         with:
           webhook_id: ${{ secrets.WEBHOOK_ID }}
           webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-          message: Insert custom message here.(this will also be a secrets value in the future for portability)
+          webhook_name: "Name"
+          message: Insert custom message here. (this will also be a secrets value in the future for portability)
 ```

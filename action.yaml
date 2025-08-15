@@ -2,6 +2,10 @@
 name: 'Discord Webhook Send Message'
 description: 'Send message to webhook of discord channel.'
 inputs:
+  webhook_name:
+    description: 'custom name for webhook'
+    required: false
+    default: 'Chicken'
   webhook_id:
     description: 'Discord Channel webhook id'
     required: true
@@ -11,7 +15,7 @@ inputs:
   message:
     description: 'custom message to be sent'
     required: false
-    default: 'New github release download here https://github.com/aar0nsky/tarkov-map-viewer/releases/latest'
+    default: 'shit updated, take a looksies!'
 
 runs:
   using: 'docker'
@@ -19,4 +23,4 @@ runs:
 
 branding:
   icon: 'activity'  
-  color: 'purple'
+  color: 'orange'
